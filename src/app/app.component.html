@@ -1,7 +1,18 @@
 
- 
-<a href="/login">hola</a><hr>
-<a href="/sing-up">chao</a> <hr>
-<a href="">inicio</a>
+<div class="GeneralContainer">
+    <header class="navBarContainer">
+        <button class="btnNavBar">Login</button>
+        <button class="btnNavBar" style="margin-right: 10px;">Register</button>
 
-<router-outlet></router-outlet>
+    </header>
+    <nav class="sideBAr">
+        <app-nav-bar></app-nav-bar>
+
+    </nav>
+    <div class="coponentsContainer">
+        <router-outlet></router-outlet>
+
+    </div>
+ </div>
+
+

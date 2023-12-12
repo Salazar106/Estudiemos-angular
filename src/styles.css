@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    margin: 0;
+    padding: 0;
+    --color-default: #004f83;
+    --color-second: #0067ac;
+    --color-white: #fff;
+    --color-body: #e4e9f7;
+    --color-light: #e0e0e0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-light);
+
+}
+
+
+/* Estilo para navegadores compatibles con scrollbar-width (Firefox) */
+body {
+    scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color:var(--color-default);
+    border-radius: 5px;
+}

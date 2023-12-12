@@ -1,0 +1,52 @@
+.GeneralContainer{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.navBarContainer{
+    width: 100%;
+    position: relative;
+    height: 60px;
+    background-color: var(--color-default);
+    position: fixed;
+    display: flex;
+    justify-content: end;
+
+
+}
+.sideBAr{
+    height: 100%;
+    position: fixed;
+    width: 100px;
+    
+
+}
+.coponentsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 90%;
+    min-height: 635px;
+    margin-left: 10%;
+}
+
+
+.btnNavBar{
+    height: 80%;
+    min-width: 60px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+    border-radius: 20%;
+    text-decoration: underline;
+    font-size: 18px;
+    gap: 20px;
+    color:white;
+}
+
+.btnNavBar:hover{
+    transform: scale(1.1);
+}

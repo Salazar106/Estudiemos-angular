@@ -1,0 +1,46 @@
+.sidebar{
+  background-color: var(--color-second);
+  height: 100%;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  z-index: 99;
+
+}
+
+
+.navList{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  color: azure;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.itemList{
+  text-align: start;
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.linkListado{
+  width: 35px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 20%;
+  transition:all 0.2s;
+}
+
+.linkListado :hover{
+  /* border-radius: 20%;
+  border: 1px solid white; */
+  transform: scale(1.2);
+
+}
