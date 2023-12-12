@@ -19,6 +19,10 @@
     width: 50%;
     background: radial-gradient(circle, #7ca4c2dd, rgba(80, 111, 165, 0.933));
     border-radius: 0 8px 28px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
 }
 
@@ -46,6 +50,39 @@
     min-width: 200px;
     min-height: 25px;
     box-shadow: 2px 1px 5px grey;
+    border-radius: 5px;
+    border-style: double;
 
     
+}
+
+
+.imgLogoLogin{
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 5px 5px 4px rgb(61, 60, 60);
+}
+
+.imgContainer p{
+    color: var(--color-default);
+    font-size: large;
+    cursor: default;
+}
+
+.linkRegister{
+    position: fixed;
+    justify-content: end;
+
+}
+
+.linkAuth{
+    color: var(--color-second);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.linkAuth:hover{
+    color: var(--color-default);
+    text-decoration: underline;
 }
