@@ -13,6 +13,7 @@
     position: fixed;
     display: flex;
     justify-content: end;
+    align-items: center;
 
 
 }
@@ -29,13 +30,14 @@
     align-items: center;
     background-color: transparent;
     width: 90%;
-    min-height: 635px;
+    margin-top: 60px;
+    min-height: 575px;
     margin-left: 10%;
 }
 
 
 .btnNavBar{
-    height: 80%;
+    height: 40%;
     min-width: 60px;
     background-color: transparent;
     border: 1px solid transparent;
@@ -45,6 +47,7 @@
     font-size: 18px;
     gap: 20px;
     color:white;
+    cursor: pointer;
 }
 
 .btnNavBar:hover{

@@ -33,3 +33,21 @@ body::-webkit-scrollbar-thumb {
     background-color:var(--color-default);
     border-radius: 5px;
 }
+
+.btn-primary{
+    min-width: 100px;
+    background-color: var(--color-default);
+    color: white;
+    font-size: 15px;
+    min-height: 30px;
+    border-style:hidden;
+    border-radius: 5px;
+    box-shadow: 2px 1px 5px grey;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-primary:hover{
+    background-color: #013b61;
+
+}

@@ -1,0 +1,51 @@
+.cardContainer{
+    width: 600px;
+    height:500px;
+    border: 0px solid var(--color-default);
+    border-radius: 30px  10px;
+    box-shadow: 2px 2px 10px grey;
+    display: flex;
+    flex-wrap: none;
+}
+
+
+.login-form{
+    width: 50%;
+    background-color: transparent;
+    border-radius: 30px 0 0 10px;
+}
+
+.imgContainer{
+    width: 50%;
+    background: radial-gradient(circle, #7ca4c2dd, rgba(80, 111, 165, 0.933));
+    border-radius: 0 8px 28px 0;
+
+}
+
+.loginTitle{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 25px;
+    font-style: italic;
+    cursor: default;
+    text-shadow: 1px 1px 5px  grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.inputGroup input{
+    min-width: 200px;
+    min-height: 25px;
+    box-shadow: 2px 1px 5px grey;
+
+    
+}
