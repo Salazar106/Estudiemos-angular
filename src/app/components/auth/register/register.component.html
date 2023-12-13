@@ -1,1 +1,55 @@
-<p>register works!</p>
+<div class="cardContainer">
+
+    <div class="login-form">
+        <div class="loginTitle">
+            <img class="imgLogoLogin" src="../../../../assets/img/imgLogoGrande.png" alt="">
+            <p>Introduce your information</p>
+        </div>
+        <form class="formContainer" [formGroup]="newUser" (ngSubmit)="RegisterUser()">
+            <div class="inputGroup">
+                <input type="text" title="Firts Name" placeholder="Firts Name" name="firtsName" id="firtsName" autocomplete="off">
+                <span style="color: red;" *ngIf="newUser.get('firtsName')?.hasError('required') && newUser.get('firtsName')?.touched">El Campo es <strong>REQUERIDO</strong></span>
+            </div>
+            <div class="inputGroup">
+                <input type="text" title="Last Name" placeholder="Last Name" name="lastsName" id="lastsName" autocomplete="off">
+                <span style="color: red;" *ngIf="newUser.get('lastsName')?.hasError('required') && newUser.get('lastsName')?.touched">El Campo es <strong>REQUERIDO</strong></span>
+            </div>
+            <div class="inputGroup">
+                <input type="text" title="Username" placeholder="Username" name="username" id="username" autocomplete="off">
+                <span style="color: red;" *ngIf="newUser.get('username')?.hasError('required') && newUser.get('username')?.touched">El Campo es <strong>REQUERIDO</strong></span>
+            </div>
+            <div class="inputGroup">
+                <input type="email" title="Email" placeholder="Email" name="email" id="email" autocomplete="off">
+            
+                <span style="color: red;" *ngIf="newUser.get('email')?.hasError('required') && newUser.get('email')?.touched">El Campo es <strong>REQUERIDO</strong></span>
+            </div>
+            <div class="inputGroup">
+                <input type="password" title="Password" placeholder="Password" name="password" id="password" autocomplete="off">
+                <span style="color: red;" *ngIf="newUser.get('password')?.hasError('required') && newUser.get('password')?.touched">El Campo es <strong>REQUERIDO</strong></span>
+            </div>
+            <div class="inputGroup">
+                <input type="password" title="Confirm Password" placeholder="Confirm Password" name="confirmPassword" id="confirmPassword">
+                <span style="color: red;" *ngIf="newUser.get('confirmPassword')?.hasError('required') && newUser.get('confirmPassword')?.touched">El Campo es <strong>REQUERIDO</strong></span>
+            </div>
+            <div style="width: 100%; text-align: center;">
+                <a class="linkAuth" href="/login">Alredy have an account</a>
+            </div>
+            <div>
+                <button  [disabled]="newUser.invalid" (click)="RegisterUser()" type="submit" class="btn-primary" title="Sing-Up">Sin-Up</button>
+            </div>
+        </form>
+        <div>
+            <div class="iconRegister">
+                <button class="btnRegisterAccount">
+                    <img src="../../../../assets/img/google.png" alt="google" title="Register with Google">
+                </button>
+                <button class="btnRegisterAccount">
+                    <img src="../../../../assets/img/facebook.png" alt="facebook" title="Register with Facebook">
+                </button>
+            </div>
+           
+        </div>
+    </div>
+
+    
+</div>
